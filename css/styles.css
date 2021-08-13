@@ -33,8 +33,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
-  height: 650px;
+  width: calc(100vw - 25px);
+  height: 100vh;
   background: #3dbeff url('../images/desktop/image-header.jpg') no-repeat center bottom;
   background-size: contain;
 }
@@ -56,6 +56,8 @@ header {
 .logo {
   font-family: 'Barlow', sans-serif;
   font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
   margin: 0 0 0 20px;
   flex: 1;
 }
@@ -81,6 +83,7 @@ header {
 .menu-nav ul li a {
   display: inline-block;
   color: white;
+  font-size: 24px;
   padding: 10px 15px;
   text-decoration: none;
 }
@@ -92,7 +95,7 @@ header {
   font-weight: bold;
   padding: 15px 20px;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 .introducao {
@@ -106,7 +109,7 @@ header {
   text-align: center;
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  font-size: 5em;
+  font-size: 7em;
   color: white;
   margin-bottom: 15%;
 }
