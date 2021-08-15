@@ -20,6 +20,7 @@
 
 body {
   font-size: 16px;
+  background-color: #fffbf8;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -91,8 +92,24 @@ header {
   display: inline-block;
   color: white;
   font-size: 1.10em;
+  margin: 10px 0 0;
   padding: 10px 15px;
   text-decoration: none;
+}
+
+.menu-nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin: 5px auto;
+  transition: .2s;
+  border-radius: 10px
+}
+
+.menu-nav ul li a:hover::after {
+  width: 100%;
+  background-image: linear-gradient(to right, #ff4904,#ff9f00, #ff4904);
 }
 
 .menu-nav ul li a.button {
@@ -101,7 +118,18 @@ header {
   font-family: 'Fraunces', serif;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 0;
   border-radius: 50px;
+  transition: box-shadow .3s;
+}
+
+.menu-nav ul li a.button::after {
+  content: '';
+  display: none;
+}
+
+.menu-nav ul li a.button:hover {
+  box-shadow: 0 0 50px white;
 }
 
 .introducao {
@@ -186,6 +214,28 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1em;
+  position: relative;
+  z-index: 2;
+}
+
+.services-desc span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  display: block;
+  width: 110%;
+  height: 6px;
+  border-radius: 10px 50px 50px 50px;
+  z-index: -1;
+}
+
+.services-desc span.bege::after  {
+  background-color: #fff3ba;
+}
+
+.services-desc span.rose::after {
+  background-color: #ffdcd6
 }
 
 .service-img {
@@ -196,7 +246,7 @@ header {
 .quote-interno {
   position: absolute;
   top: 60%;
-  left: 20%;
+  left: 25%;
   text-align: center;
   font-family: 'Fraunces', serif;
 }
