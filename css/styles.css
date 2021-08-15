@@ -245,13 +245,14 @@ header {
 }
 
 .client-ul li {
+  flex: 1 1 260px;
   padding: 10px;
 }
 
 .client-ul .client-img {
   width: 80px;
   height: 80px;
-  margin: 10px auto 0;
+  margin: 50px auto 0;
   border-radius: 50%;
 }
 
@@ -264,6 +265,7 @@ header {
   max-width: 300px;
   font-size: .9em;
   line-height: 1.5;
+  margin: 0 auto;
   padding: 40px 0px;
   color: var(--Very-dark-desaturated-blue);
 }
@@ -282,4 +284,63 @@ header {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+}
+
+.portfolio-img {
+  flex: 1 1 160px;
+}
+
+.portfolio-img img {
+  object-fit: contain;
+}
+
+footer {
+  background-color: #90d4c5;
+  color: #458e7d;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav h2 {
+  font-weight: bold;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 50px 0;
+}
+
+footer nav ul:nth-child(2) li {
+  margin: 10px 0;
+}
+
+footer nav ul:nth-child(3) li {
+  margin: 10px 15px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 15px;
+}
+
+.attribution {
+  padding: 10px;
+  background-color: var(--Dark-moderate-cyan-footer);
+}
+
+.attribution a {
+  color: var(--Very-dark-desaturated-blue) !important
+}
+
+.attribution a:hover {
+  color: white !important;
 }
