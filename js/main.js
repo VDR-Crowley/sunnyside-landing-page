@@ -6,6 +6,7 @@ menu_mobile.addEventListener('click', () => {
   if(menu_nav.classList.contains('ativo')) {
     menu_nav.classList.remove('ativo');
     menu_nav.style.display = 'none';
+    document.body.style.overflow = '';
     menu_filter.style.display = "none";
 
   } else {
