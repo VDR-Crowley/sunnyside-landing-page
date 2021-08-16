@@ -31,8 +31,10 @@
     <div class="menu">
       <h1 class="logo">sunnyside</h1>
 
-      <div class="menu-mobile"></div>
-
+      <div class="menu-mobile">
+        <img src="./images/icon-hamburger.svg" alt="">
+      </div>
+      <div class="filter"></div>
       <nav class="menu-nav">
         <ul>
           <li><a href="#">About</a></li>
@@ -66,7 +68,10 @@
         </div>
 
         <div class="service-img ovo">
-          <img src="./images/desktop/image-transform.jpg" alt="imagen ovo">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-transform.jpg">
+            <img src="./images/desktop/image-transform.jpg" alt="imagen ovo">
+          </picture>
         </div>
       </div>
     </section>
@@ -76,7 +81,10 @@
       <div class="transform-service">
 
         <div class="service-img">
-          <img src="./images/desktop/image-stand-out.jpg" alt="imagem milk">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-stand-out.jpg">
+            <img src="./images/desktop/image-stand-out.jpg" alt="imagem milk">
+          </picture>
         </div>
 
         <div class="services-desc">
@@ -96,7 +104,10 @@
     <section class="service">
       <div class="transform-service">
         <div class="service-img">
-          <img src="./images/desktop/image-graphic-design.jpg" alt="imagen cereja">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-graphic-design.jpg">
+            <img src="./images/desktop/image-graphic-design.jpg" alt="imagen cereja">
+          </picture>
           <div class="quote-interno cereja">
             <h2>Graphic design</h2>
             <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
@@ -104,7 +115,10 @@
         </div>
 
         <div class="service-img">
-          <img src="./images/desktop/image-photography.jpg" alt="imagen laranja">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-photography.jpg">
+            <img src="./images/desktop/image-photography.jpg" alt="imagen laranja">
+          </picture>
           <div class="quote-interno laranja">
             <h2>Photography</h2>
             <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
@@ -155,19 +169,31 @@
 
     <section class="portfolio">
       <div class="portfolio-img">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+        </picture>
       </div>
 
       <div class="portfolio-img">
-        <img src="./images/desktop/image-gallery-orange.jpg" alt="">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-orange.jpg">
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="">
+        </picture>
       </div>
 
       <div class="portfolio-img">
-        <img src="./images/desktop/image-gallery-cone.jpg" alt="">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-cone.jpg">
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="">
+        </picture>
       </div>
 
       <div class="portfolio-img">
-        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+        </picture>
       </div>
     </section>
 
@@ -197,6 +223,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

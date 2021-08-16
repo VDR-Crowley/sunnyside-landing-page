@@ -26,8 +26,9 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 header {
@@ -144,7 +145,7 @@ header {
   text-align: center;
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 4em;
   color: white;
   position: absolute;
   top: 0px
@@ -394,3 +395,177 @@ footer nav ul li a {
 .attribution a:hover {
   color: white !important;
 }
+
+@media (min-width: 768px) and (max-width: 959px) {
+  
+  .desc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .quote-interno {
+    top: 50%;
+    left: 5%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .menu-mobile {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+
+  /*.ativo::after {
+    width: 100;
+    height: 100vh;
+  }*/
+
+  .filter {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000050;
+  }
+
+  .menu-nav.ativo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    border: 50px solid;
+    z-index: 9999999;
+    border-color:  transparent white transparent transparent  ;
+  }
+
+  .menu-nav.ativo {
+    width: 90%;
+    position: absolute;
+    top: 20%;
+    padding: 10px 0 35px;
+    background-color: white;
+    z-index: 2;
+  }
+
+  .menu-nav.ativo ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-nav.ativo ul li a{
+    color: black;
+    font-size: 1.4em;
+  }
+
+  .menu-nav.ativo ul li:nth-last-child(1) {
+    margin-top: 20px;
+  }
+
+  .menu-nav.ativo ul li a.button {
+    padding: 15px 20px;
+    font-size: 1.2em;
+    background-color: #ff9f00;
+  }
+
+  .menu-nav.ativo ul li a.button:hover {
+    background-color: #ff4904;
+  }
+
+  .introducao h1 {
+    font-size: 2.5em;
+  }
+
+  .img-header {
+    background: #3dbeff url('../images/mobile/image-header.jpg') no-repeat center bottom;
+    background-size: 100% 170%;
+  }
+
+  .services-desc {
+    flex: 1 1 380px;
+    padding: 20px 0;
+  }
+
+  .services-desc h2 {
+    font-size: 1.5em;
+    max-width: 250px;
+  }
+
+  .services-desc p {
+    max-width: 300px;
+    line-height: 20px;
+  }
+
+  img {
+    width: 100%
+  }
+
+  .service-img {
+    order: -1;
+    flex: 2 1 380px;
+  }
+
+  .quote-interno {
+    top: 60%;
+    left: 15%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .quote-interno {
+    top: 60%;
+    left: 20%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .services-desc {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .services-desc h2 {
+    margin: 0 auto;
+  }
+
+  .img-header {
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 509px) {
+  .quote-interno {
+    top: 60%;
+    left: 10%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 377px) {
+  .quote-interno {
+    top: 60%;
+    left: 0%;
+    padding: 20px;
+  }
+}
+
+
+
