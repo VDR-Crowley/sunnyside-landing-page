@@ -354,15 +354,15 @@ footer {
   justify-content: center;
 }
 
-footer nav {
+footer .nav {
   text-align: center;
 }
 
-footer nav h2 {
+footer .nav h2 {
   font-weight: bold;
 }
 
-footer nav ul {
+footer .nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -370,31 +370,18 @@ footer nav ul {
   margin: 50px 0;
 }
 
-footer nav ul:nth-child(2) li {
+footer .nav ul:nth-child(2) li {
   margin: 10px 0;
 }
 
-footer nav ul:nth-child(3) li {
+footer .nav ul:nth-child(3) li {
   margin: 10px 15px;
 }
 
-footer nav ul li a {
+footer .nav ul li a {
   text-decoration: none;
   color: inherit;
   padding: 10px 15px;
-}
-
-.attribution {
-  padding: 10px;
-  background-color: var(--Dark-moderate-cyan-footer);
-}
-
-.attribution a {
-  color: var(--Very-dark-desaturated-blue) !important
-}
-
-.attribution a:hover {
-  color: white !important;
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
