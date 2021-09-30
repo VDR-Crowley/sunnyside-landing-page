@@ -6,4 +6,5 @@ Visualização do design para o desafio de codificação da página de destino d
 
 
 [Veja o desafio pronto](https://quizzical-ardinghelli-21cc39.netlify.app/)
+<br>
 [Meu perfil no front-end-mentor](https://www.frontendmentor.io/profile/VDR-Crowley)
